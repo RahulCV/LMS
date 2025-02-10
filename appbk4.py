@@ -130,4 +130,4 @@ def styles():
     return send_from_directory(os.path.dirname(__file__), 'styles.css')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host=os.getenv('HOST'),port=int(os.getenv('PORT'),8080), debug=True) 

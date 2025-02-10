@@ -189,4 +189,4 @@ def logout():
     return redirect(url_for('home'))
 
 if __name__ == '__main__':
-    app.run(port=int(os.getenv('PORT'),8080), debug=True) 
+    app.run(host=os.getenv('HOST'),port=int(os.getenv('PORT'),8080), debug=True) 
